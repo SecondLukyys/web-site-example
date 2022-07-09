@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>  
+<head>
+<!--Komentaras. This is a comment. Comments are not displayed in the browser-->
+    <title> API Uzduotis</title> 
+    <script type = "text/javascript" src="fetch.js"> </script>  
+    <link rel="stylesheet" rel href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head> 
+
+<body>  
+    
+    <button id="play-pause-btn"><i class="fa-solid fa-pause"></i></button>
+
+    <video id="bg-video" autoplay loop muted playsinline>
+        <source src="resources/fonovideobasket.webm" type="video/webm">
+        <source src="resources/fonovideobasket.mp4" type="video/mp4">
+    </video>
+
+    <!--<img id="bg-image" src="basketpaveikslelis.jpg" alt="Basket image">--> 
+
+    <aside>
+        <h4> Instrukcijos </h4>
+        <p>Paspauskite mygtukus <abbr title="Representational State Transfer Application Programming Interface">RestAPI</abbr> funkciju realizavimui</p>
+    </aside>
+
+    <div class="content">
+
+        <h1>API Uzduotis</h1>
+        
+        <br><br><br>
+
+        <p> 
+            Get metodas:  <input type = "Button" onclick = "functionget()" value = "GET"> rezultatas konsoleje
+            Post metodas: <input type = "Button" onclick = "functionpost()" value = "POST"> rezultatas konsoleje
+        </p>
+        <br>
+        <p>
+            Put metodas: <input type = "Button" onclick = "functionput()" value = "PUT"> rezultatas konsoleje
+            Delete metodas: <input type = "Button" onclick = "functiondelete()" value = "DELETE"> rezultatas konsoleje
+        </p>
+        <p>
+            Patch metodas: <input type = "Button" onclick = "functionpatch()" value = "PATCH"> rezultatas konsoleje
+        </p>
+
+        <br><br><br>
+        
+
+       <div class="container">
+           <table class="table table-stripped">
+               <thead>
+                   <tr>
+                       <th> id </th>
+                       <th> first_name </th>
+                       <th> email </th>
+                   </tr>
+                </thead>
+                <tbody id ="data">
+                    </tbody>
+                </table>
+        </div>
+
+<!--
+
+<script>
+        fetch('https://reqres.in/api/users').then(
+        res=>{
+            res.json().then(
+                data=>{
+                    console.log(data);
+                    if(data.lenght > 0){
+                        var temp = "";
+
+                        data.forEach((u)=>{
+                            temp += "<tr>";
+                            temp += "<td>"+u.id+"/td";
+                            temp += "<td>"+u.first_name+"/td";
+                            temp += "<td>"+u.email+"</td></tr>";
+                        })
+
+                        document.getElementById("data").innerHTML = temp;
+                    }
+                }
+            )
+        }
+    )
+
+</script>
+-->      
+
+        <br><br><br>
+
+        <ul>
+            <li>Get metodas <bdi> GET </bdi>: papraso ir gauna duomenis is serverio. Naudojamas web resursui gauti (užklausos kūno neturi). </li>
+            <li>Post metodas <bdi> POST </bdi>: nusiuncia duomenis i serveri </li>
+            <li>Put metodas <bdi> PUT </bdi>: atnaujina arba issaugo resursus serveryje </li>
+            <li>Delete metodas <bdi> DELETE </bdi>: pasalina resursus is serverio </li>
+        </ul>
+        <!--
+        <input type = "Button" onclick = "functionmyfunction()" value = "GET">
+        <input type = "Button" onclick = "functionpost()" value = "POST">
+        <input type = "Button" onclick = "functionput()" value = "PUT">
+        <input type = "Button" onclick = "functiondelete()" value = "DELETE">
+        -->
+
+        <br><br><br>
+        <!--<img src="fonas.jpg">-->
+        <br><br><br>
+
+        <h1>Zemelapis su elementu laukais</h1>
+        <p>Paspausk ant liezuvio arba nosies ir busi perkeltas i kita puslapi: (paspaudus liezuvi galima suzinoti daugiau apie API)</p>
+        <img src="resources/suo.jpg" alt="suo" usemap="#suomap" width="400" height="400">
+
+        <map name="suomap">
+            <area shape="rect" coords="50,300,100,10" alt="liezuvis" href="puslapis1.html">
+            <area shape="rect" coords="150,150,300,300" alt="nosis" href="puslapis2.html">
+        </map>
+
+        <table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:magenta">
+  </colgroup>
+  <tr>
+    <th>Numeris</th>
+    <th>Pavadinimas</th>
+    <th>Kaina</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Oboulys</td>
+    <td>$5</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Ananasas</td>
+    <td>$9</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Bananas</td>
+    <td>$3</td>
+  </tr>
+
+</table>
+
+        <br><br><br>
+        <a href="https://www.w3schools.com/tags/default.asp"> Šaltinis - Nuoroda i http tutorials </a>
+        <br><br><br>
+
+        <a href="https://mixkit.co/free-sound-effects/dog/"> Šaltinis - Nuoroda i garsus</a>
+        <br><br><br>
+
+        <address>
+            Parasyta: <a href="lukys000@gmail.com">Luko L.</a>.<br> 
+            Vilnius, Lietuva<br>
+        </address>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>  
+</html>

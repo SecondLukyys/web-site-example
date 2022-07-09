@@ -1,0 +1,52 @@
+API: https://reqres.in/
+
+<script type = "text/javascript" src = "C:\Users\LENOVO\Desktop\Darbalaukis\Universiteto\Trecias kursas\Pavasario Semestras\Interneto technologijos\api su visual code\fetch.js">
+
+ console.log(fetch('https://reqres.in/api/users'));
+
+ function functionmyfunction()
+{
+    console.log(fetch('https://reqres.in/api/users'));
+}
+
+<body onload="functionmyfunction()"> 
+
+<a href="C:\Users\LENOVO\Desktop\Darbalaukis\Universiteto\Trecias kursas\Pavasario Semestras\Interneto technologijos\api su visual code\paveikslelis.jpg" download> Atsisiusti paveiksleli
+    <img src="C:\Users\LENOVO\Desktop\Darbalaukis\Universiteto\Trecias kursas\Pavasario Semestras\Interneto technologijos\api su visual code\paveikslelis.jpg">
+</a>
+
+
+
+title {
+            display: none;
+            float: middle;
+            font-style: italic;
+            place-content: middle;
+        }
+        
+        h1 {
+            display: block;
+            font-size: 2em;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+            margin-left: 4cm;
+            margin-right: 0;
+            font-weight: bold;
+            float: middle;
+            font-style:italic;
+            color: lightgoldenrodyellow;
+        }
+
+        p {
+            color: lightgoldenrodyellow;
+            text-indent: 30px;
+            text-transform:none;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h4 {
+           color: lightgoldenrodyellow;
+           font-weight: bold;
+        }

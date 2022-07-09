@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#bg-video,
+#bg-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -10;
+}
+
+#bg-image {
+    z-index: -20;
+}
+
+#play-pause-btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.content {
+    display: block;
+    margin: 0px auto;
+    width: 50vw;
+    min-width: 280px;
+    background-color: rgb(0,0,0,0.8);
+    color: rgb(240,240,240);
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+a:link, a:visited {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    }
+
+a:link:active, a:visited:active {
+    color: darkred;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgb(90, 110, 28);
+}
+
+title {
+    display: none;
+    float: middle;
+    font-style: italic;
+    place-content: middle;
+}
+    
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 4cm;
+    margin-right: 0;
+    font-weight: bold;
+    float: middle;
+    font-style:italic;
+    color: lightgoldenrodyellow;
+}
+
+p {
+    color: lightgoldenrodyellow;
+    text-indent: 30px;
+    text-transform:none;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+}  
+
+.all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: forestgreen;
+}
+
+.all-browsers > h1, .browser {
+    margin: 10px;
+    padding: 5px;
+}
+
+.browser {
+    background: blueviolet;
+}
+
+.browser > h2, p {
+    margin: 4px;
+    font-size: 90%;
+}
