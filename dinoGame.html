@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" onclick="jump()">
 <head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Dino Game</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" rel href="styles.css">
 
-<title>Liezuvis</title>
 </head>
-<body>
 
+<body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top">
         <div class="container-fluid">
@@ -49,46 +50,22 @@
                 </ul>
             </div>
         </div>
-    </nav> 
+    </nav>
 
-    <button id="play-pause-btn"><i class="fa-solid fa-pause"></i></button>
+<div id="game">
+    <div id="character"></div>
+    <div id="block"></div>
+</div>
 
-        <video id="bg-video" autoplay loop muted playsinline>
-            <source src="resources/fonovideobasket.webm" type="video/webm">
-            <source src="resources/fonovideobasket.mp4" type="video/mp4">
-        </video>
+<div>
+    <p>Paspauskite ir pašoks į viršų</p>
+</div>
 
-    <div class="content">
+<a href="https://www.youtube.com/watch?v=bG2BmmYr9NQ" title="tutorial2">   Youtube šaltinis mini žaidimo kūrimui</a>
 
-        <h1>LYZT! Liežuvis, stilius su CSS</h1>
-
-        <article class="all-browsers">
-            <h1>Populiarus API javascriptui</h1>
-            <article class="browser">
-                <h2>OpenWeatherMap</h2>
-                <p>For each point on the globe, we provide historical, current and forecasted weather data via light-speed APIs</p>
-            </article>
-            <article class="browser">
-                <h2>SkyScanner</h2>
-                <p>API about flights</p>
-            </article>
-            <article class="browser">
-                <h2>Yahoo finance</h2>
-                <p>Paga about finance and bussiness provided by Yahoo</p>
-            </article>
-        </article>
-
-        <br><br><br>
-        <a href="https://en.wikipedia.org/wiki/Dog"> Šaltinis - Nuoroda i wikipedijos puslapi apie sunis </a>
-        <br><br><br>
-        <a href="puslapis0.html"> Nuoroda atgal </a>
-        <br><br><br>
-        <a href="index.html" title="home">Index page</a>
-        
-
-    </div>
-
-    <script src="script.js"></script>
 
 </body>
+
+<script src="dinoGameScript.js"></script>
+
 </html>
