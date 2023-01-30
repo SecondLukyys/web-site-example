@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #020c68;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
 .myDiv1{
     border: 5px outset #3b5998;
     background-color: #b4b4b4;
