@@ -1,5 +1,3 @@
-// API: https://reqres.in/
-
 // 1) GET basic get function application
 function functionget()
 {
@@ -129,8 +127,3 @@ function functiongettable()
         }
     )
 }
-
-//https://reqres.in/
-//https://www.youtube.com/channel/UC26_rFZReLXNu8bULVARUXg/videos
-//https://www.youtube.com/watch?v=hOXWY9Ng_KU
-//https://www.youtube.com/watch?v=bBYM3KMuXC4

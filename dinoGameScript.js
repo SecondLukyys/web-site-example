@@ -1,4 +1,5 @@
-var { character, block } = newFunction();
+var character = document.getElementById("character");
+var block = document.getElementById("block");
 const newLocal = setInterval(function () {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
